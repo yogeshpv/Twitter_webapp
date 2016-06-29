@@ -1,1 +1,21 @@
-<p>This is the partial for view 1.</p>
+<div class="row">
+<div class="table-responsive col-sm-offset-3 col-md-6"">
+    <table class="table table-hover table-bordered">
+		<tr ng-repeat="user in users" >
+	  		<td>
+		  		<div class="panel-body content1">
+		  			<div class="col-sm-2 small">
+			  		<img src={{user.profile_image_url}} class="img-rounded img-responsive" alt="{{user.name}}" width="50" height="35" ">{{user.name}}
+			  		</div>
+			  		<div class="col-sm-8">
+			  		ITs here
+	                </div>
+           		 </div>
+	  		</td> 
+	 	</tr>
+	 	</div>
+    </table>
+    </div>
+</div>
+
+
