@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.controller', ['ngRoute','ngResource'])
+angular.module('myApp.controller', [])
 .controller('View1Ctrl', ['$scope','getData',function($scope,getData) {
  	$scope.users= getData.tweeterUsers;
  	$scope.userDetails=getData.getUser('twitterdev');

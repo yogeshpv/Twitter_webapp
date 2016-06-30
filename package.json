@@ -1,11 +1,10 @@
 {
   "name": "tweetsml",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A starter project for AngularJS",
   "repository": "https://github.com/vyompvscu/MLTweets.git",
   "license": "MIT",
-  "config":{"host":"localhost","port":"8000"},
   "devDependencies": {
     "bower": "^1.7.7",
     "http-server": "^0.9.0",
@@ -20,7 +19,7 @@
   "scripts": {
     "postinstall": "bower install",
     "prestart": "npm install",
-    "start": "http-server -a process.env.HOST -p process.env.PORT -c-1 ./app",
+    "start": "node serverstart.js",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js --single-run",
